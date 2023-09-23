@@ -1,0 +1,3 @@
+﻿  源.cpp
+D:\visual studio data\凯撒密码转换\源.cpp(13,9): warning C4477: “scanf”: 格式字符串“%c”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
+  凯撒密码转换.vcxproj -> D:\visual studio data\凯撒密码转换\x64\Debug\凯撒密码转换.exe
