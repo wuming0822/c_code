@@ -1,5 +1,5 @@
 #include <stdio.h>
-void nUms (int x)
+void nUms (int x)//创建一个分离各个位数，并隔空格打印（递归） 如输入1234，输出1 2 3 4
 {
     if (x > 9)
     {
