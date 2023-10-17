@@ -1,6 +1,6 @@
-#define _CRT_SECURE_NO_WARNINGS 1//Ã°ÅİÅÅĞò
+#define _CRT_SECURE_NO_WARNINGS 1//å†’æ³¡æ’åº
 #include <stdio.h>
-//´´½¨½»»»ÊıÖµº¯Êı
+//åˆ›å»ºäº¤æ¢æ•°å€¼å‡½æ•°
 void swap(int* x, int* y)
 {
 	int tmp = *x;
@@ -8,17 +8,17 @@ void swap(int* x, int* y)
 	*y = tmp;
 }
 
-void moPo(int arr[], int sz)//´´½¨Ã°ÅİÅÅĞòËã·¨º¯Êı
+void moPo(int arr[], int sz)//åˆ›å»ºå†’æ³¡æ’åºç®—æ³•å‡½æ•°
 {
 	int i = 0;
-	for (i = 0; i < sz - 1; i++)
+	for (i = 0; i < sz - 1; i++)//åˆ›å»ºæ•´ä½“å¾ªç¯çš„å‡½æ•°
 	{
 		int j = 0;
-		for (j = 0; j < sz - 1 - i; j++)
+		for (j = 0; j < sz - 1 - i; j++)//åˆ›å»ºç”¨äºæ¯ä¸€æ¬¡å¤§ä½“å¾ªç¯çš„çš„å‡½æ•°
 		{
-			if (arr[j] < arr[j + 1])
+			if (arr[j] < arr[j + 1])//æ¯å½“å·¦è¾¹å¤§äºå³è¾¹æ—¶ï¼Œä¸¤è¾¹çš„æ•°å€¼å°±ä¼šäº¤æ¢
 			{
-				swap(&arr[j], &arr[j + 1]);//µ÷ÓÃ½»»»ÊıÖµº¯Êı
+				swap(&arr[j], &arr[j + 1]);//è°ƒç”¨äº¤æ¢æ•°å€¼å‡½æ•°
 			}
 		}
 	}
@@ -29,14 +29,14 @@ int main()
 	int arr[] = { 51,5,39,2,4,9,31,22,67,10 };
 	int sz = sizeof(arr) / sizeof(arr[0]);
 	int X = 0;
-	printf("Êı×é¸÷¸öÔªËØ·Ö±ğÎª£º");
+	printf("æ•°ç»„å„ä¸ªå…ƒç´ åˆ†åˆ«ä¸ºï¼š");//å±•ç°å†’æ³¡é™åºæ’åºä¹‹å‰çš„æ•°ç»„ä¸­çš„å…ƒç´ 
 	for (X = 0; X < sz; X++)
 	{
 		printf("%d ", arr[X]);
 	}
 	printf("\n");
-	moPo(arr,sz);
-	printf("½µĞòÅÅĞòºóÎª£º");
+	moPo(arr,sz);//è°ƒç”¨å†’æ³¡å‡½æ•°
+	printf("é™åºæ’åºåä¸ºï¼š");//å±•ç¤ºå†’æ³¡é™åºæ’åºä¹‹åçš„æ•°ç»„ä¸­çš„å…ƒç´ 
 	int i = 0;
 	for (i = 0; i < sz; i++)
 	{
@@ -44,10 +44,10 @@ int main()
 	}
 	return 0;
 }
-
-//ÕıÈ·Ğ´·¨
+//å¯¹äºå†’æ³¡æ’åºçš„å†™æ³•ï¼Œæ­£ç¡®çš„å†™æ³•ä¸ºï¼š
+//æ­£ç¡®å†™æ³•
 /*
-void moPo(int arr[], int sz)//´´½¨Ã°ÅİÅÅĞòËã·¨º¯Êı
+void moPo(int arr[], int sz)//åˆ›å»ºå†’æ³¡æ’åºç®—æ³•å‡½æ•°
 {
 	int i = 0;
 	for (i = 0; i < sz - 1; i++)
@@ -66,9 +66,9 @@ void moPo(int arr[], int sz)//´´½¨Ã°ÅİÅÅĞòËã·¨º¯Êı
 }
 */
 
-//´íÎóĞ´·¨
+//é”™è¯¯å†™æ³•
 /*
-void moPo (int arr[], int sz)//´´½¨
+void moPo (int arr[], int sz)//åˆ›å»º
 {
 	int i = 0;
 	while (i < sz - 1)
